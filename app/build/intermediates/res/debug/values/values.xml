@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/Users/5H4CK0X/Desktop/calculadora-master1/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/5H4CK0X/Desktop/Calc/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="app_name">Calculadora</string>
     <string name="hello">Hello World, CalculadoraActivity!</string>

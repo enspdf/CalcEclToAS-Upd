@@ -30,6 +30,7 @@ public final class R {
         public static final int buttonMas=0x7f050015;
         public static final int buttonMultiplicar=0x7f05000b;
         public static final int buttonResta=0x7f050010;
+        public static final int buttonSin=0x7f050016;
         public static final int editTextos=0x7f050001;
         public static final int tableRow1=0x7f050000;
         public static final int tableRow2=0x7f050002;

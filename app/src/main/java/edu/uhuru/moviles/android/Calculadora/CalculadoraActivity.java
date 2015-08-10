@@ -27,6 +27,7 @@ public class CalculadoraActivity extends Activity {
 	private Button _bDividir;
 	private Button _bIgual;
 	private Button _bC;
+	private Button _bSin;
 	
 	private int _valor;
 	private int _operacion;
@@ -58,6 +59,7 @@ public class CalculadoraActivity extends Activity {
         _bDividir = (Button)findViewById(R.id.buttonDividir);
         _bIgual = (Button)findViewById(R.id.buttonIgual);
         _bC = (Button)findViewById(R.id.buttonC);
+		_bSin = (Button)findViewById(R.id.buttonSin);
         
         _edit.setText("0");
         
@@ -84,6 +86,7 @@ public class CalculadoraActivity extends Activity {
 				if (text.equals("*")) _operacion = 2;
 				if (text.equals("/")) _operacion = 3;
 				if (text.equals("=")) _operacion = -1;
+				if (text.equals("sin")) _operacion = 4;
 			}
 		};
         
@@ -103,6 +106,7 @@ public class CalculadoraActivity extends Activity {
 		_bMultiplicar.setOnClickListener(lsBotonOperacion);
 		_bDividir.setOnClickListener(lsBotonOperacion);
 		_bIgual.setOnClickListener(lsBotonOperacion);
+		_bSin.setOnClickListener(lsBotonOperacion);
         
         _bC.setOnClickListener(new View.OnClickListener() {
 	
@@ -179,6 +183,17 @@ public class CalculadoraActivity extends Activity {
 				_edit.setText("Err");
 			}
 			break;
+			case 4: //Sin()
+				try
+				{
+					_valor = Integer.parseInt(String.valueOf(Math.sin(Double.parseDouble(_edit.getText().toString()))));
+					_edit.setText(String.valueOf(_valor));
+				}
+				catch (Exception e)
+				{
+					_edit.setTextColor(Color.BLUE);
+					_edit.setText("El valor que tenes es: " + _valor);
+				}
 		}
     		
     }

@@ -18,9 +18,10 @@
                 android:id="@+id/editTextos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_span="4"
+                android:layout_span="6"
                 android:editable="false"
                 android:ems="10"
+                android:layout_marginTop="20dp"
                 android:gravity="right"
                 android:cursorVisible="false" >
 
@@ -168,7 +169,14 @@
                 android:text="+"  android:layout_weight="1" />
 
         </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/buttonSin"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="sin" android:layout_weight="2"/>
+        </TableRow>
 
     </TableLayout>
 
-</LinearLayout><!-- From: file:/C:/Users/5H4CK0X/Desktop/calculadora-master1/app/src/main/res/layout/main.xml -->
+</LinearLayout><!-- From: file:/C:/Users/5H4CK0X/Desktop/Calc/app/src/main/res/layout/main.xml -->
